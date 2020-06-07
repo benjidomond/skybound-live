@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/skybound-live/static/css/main.489aab28.chunk.css",
+    "main.js": "/skybound-live/static/js/main.39a2e558.chunk.js",
+    "main.js.map": "/skybound-live/static/js/main.39a2e558.chunk.js.map",
+    "runtime-main.js": "/skybound-live/static/js/runtime-main.8ec16737.js",
+    "runtime-main.js.map": "/skybound-live/static/js/runtime-main.8ec16737.js.map",
+    "static/js/2.c2f8b7bc.chunk.js": "/skybound-live/static/js/2.c2f8b7bc.chunk.js",
+    "static/js/2.c2f8b7bc.chunk.js.map": "/skybound-live/static/js/2.c2f8b7bc.chunk.js.map",
+    "index.html": "/skybound-live/index.html",
+    "precache-manifest.d0386180db9310074b4ac690219b41ff.js": "/skybound-live/precache-manifest.d0386180db9310074b4ac690219b41ff.js",
+    "service-worker.js": "/skybound-live/service-worker.js",
+    "static/css/main.489aab28.chunk.css.map": "/skybound-live/static/css/main.489aab28.chunk.css.map",
+    "static/js/2.c2f8b7bc.chunk.js.LICENSE.txt": "/skybound-live/static/js/2.c2f8b7bc.chunk.js.LICENSE.txt",
+    "static/media/charlotta.png": "/skybound-live/static/media/charlotta.94234ba7.png",
+    "static/media/ferry.png": "/skybound-live/static/media/ferry.f40bd262.png",
+    "static/media/gran.png": "/skybound-live/static/media/gran.984b4a46.png",
+    "static/media/katalina.png": "/skybound-live/static/media/katalina.085bb62e.png",
+    "static/media/ladiva.png": "/skybound-live/static/media/ladiva.4fff345f.png",
+    "static/media/lancelot.png": "/skybound-live/static/media/lancelot.0113b0c2.png",
+    "static/media/lowain.png": "/skybound-live/static/media/lowain.c06e0688.png",
+    "static/media/metera.png": "/skybound-live/static/media/metera.9f9d4f2e.png",
+    "static/media/percival.png": "/skybound-live/static/media/percival.9a1be4fc.png",
+    "static/media/App.css": "/skybound-live/static/media/sbaBanner.5c287dc9.png",
+    "static/media/vaseraga.png": "/skybound-live/static/media/vaseraga.db070508.png",
+    "static/media/zeta.png": "/skybound-live/static/media/zeta.2b148787.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ec16737.js",
+    "static/js/2.c2f8b7bc.chunk.js",
+    "static/css/main.489aab28.chunk.css",
+    "static/js/main.39a2e558.chunk.js"
+  ]
+}
