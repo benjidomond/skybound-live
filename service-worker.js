@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/skybound-live/precache-manifest.d0386180db9310074b4ac690219b41ff.js"
+  "/skybound-live/precache-manifest.244b92115faf70e787c71c1021d7cb5a.js"
 );
 
 self.addEventListener('message', (event) => {

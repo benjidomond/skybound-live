@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "619bdea0067ddfc0085ec425159c101a",
+    "revision": "799b16c9e450800da0cfb16b33353ab6",
     "url": "/skybound-live/index.html"
   },
   {
-    "revision": "80bfe14a30d762f76f5b",
+    "revision": "966f6c5f5ae9282d8724",
     "url": "/skybound-live/static/css/main.489aab28.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/skybound-live/static/js/2.c2f8b7bc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "80bfe14a30d762f76f5b",
-    "url": "/skybound-live/static/js/main.39a2e558.chunk.js"
+    "revision": "966f6c5f5ae9282d8724",
+    "url": "/skybound-live/static/js/main.2188bb99.chunk.js"
   },
   {
     "revision": "8dd6f82edc8c5de46595",

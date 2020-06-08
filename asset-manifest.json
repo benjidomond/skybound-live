@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/skybound-live/static/css/main.489aab28.chunk.css",
-    "main.js": "/skybound-live/static/js/main.39a2e558.chunk.js",
-    "main.js.map": "/skybound-live/static/js/main.39a2e558.chunk.js.map",
+    "main.js": "/skybound-live/static/js/main.2188bb99.chunk.js",
+    "main.js.map": "/skybound-live/static/js/main.2188bb99.chunk.js.map",
     "runtime-main.js": "/skybound-live/static/js/runtime-main.8ec16737.js",
     "runtime-main.js.map": "/skybound-live/static/js/runtime-main.8ec16737.js.map",
     "static/js/2.c2f8b7bc.chunk.js": "/skybound-live/static/js/2.c2f8b7bc.chunk.js",
     "static/js/2.c2f8b7bc.chunk.js.map": "/skybound-live/static/js/2.c2f8b7bc.chunk.js.map",
     "index.html": "/skybound-live/index.html",
-    "precache-manifest.d0386180db9310074b4ac690219b41ff.js": "/skybound-live/precache-manifest.d0386180db9310074b4ac690219b41ff.js",
+    "precache-manifest.244b92115faf70e787c71c1021d7cb5a.js": "/skybound-live/precache-manifest.244b92115faf70e787c71c1021d7cb5a.js",
     "service-worker.js": "/skybound-live/service-worker.js",
     "static/css/main.489aab28.chunk.css.map": "/skybound-live/static/css/main.489aab28.chunk.css.map",
     "static/js/2.c2f8b7bc.chunk.js.LICENSE.txt": "/skybound-live/static/js/2.c2f8b7bc.chunk.js.LICENSE.txt",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.8ec16737.js",
     "static/js/2.c2f8b7bc.chunk.js",
     "static/css/main.489aab28.chunk.css",
-    "static/js/main.39a2e558.chunk.js"
+    "static/js/main.2188bb99.chunk.js"
   ]
 }
