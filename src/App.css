@@ -1,38 +1,439 @@
-.App {
-  text-align: center;
+/* Importing Noto Sans JP */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500&display=swap');
+body {
+    background-color: #e2edee;
+}
+/* Main Page CSS */
+.searchContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#homeSearch {
+    border-style: none none solid none;
+    border-color: #6F7375;
+    background-color: #e2edee;
+    width: 70%;
+    /* CSS Transition for focus */
+    transition: ease, border-color 0.4s;
+    -webkit-transition: ease, border-color 0.4s;
+    height: 6vh;
+    font-size: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#homeSearch:focus {
+    outline: none;
+    border-color: #69B4D4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.4em;
 }
 
-.App-link {
-  color: #61dafb;
+/* Nav CSS */
+.homeDiv {
+    margin-bottom: 3%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Removing underline from weblink */
+.navLink:link {
+    text-decoration: none;
 }
+
+/* Removiung underline from visited link */
+.navLink:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.navLink {
+    color: white;
+    font-size: 1.3em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+/* Site Banner */
+#imgHeadContainer {
+    background-image: url('./images/sbaBanner.png');
+    background-size: cover;
+    height: 16vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Site Banner Text */
+#matchFinderText {
+    font-family: arial;
+    color: white;
+    font-weight: 900;
+    font-size: 1.7em;
+    text-shadow: 1px 1px black;
+}
+
+/* Homepage Results (Hidden) */
+
+#showNoResults {
+    list-style-type: none;
+    text-align: center;
+    margin-right: 8%;
+}
+
+/* Homepage Results (Displayed) */
+
+.showResults {
+    margin-top: 2%;
+    margin-left: 5%;
+    list-style-type: none;
+    margin-right: 18%;
+}
+
+.hideResults {
+    display: none;
+}
+
+.resultData {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Component css for adding videos */
+
+#addHeader {
+    text-align: center;
+}
+
+.addForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.addLabels {
+    align-self: center;
+}
+
+.formInput {
+    margin-bottom: 5%;
+    margin-left: 3%;
+    border-style: none none solid none;
+    background-color: #E2EDEE;
+    border-color: #6F7375;
+    width: 80%;
+    height: 3vh;
+    font-size: 15px;
+    /* CSS Transition for focus */
+    transition: ease, border-color 0.4s;
+    -webkit-transition: ease, border-color 0.4s;
+}
+
+.formInput:focus {
+    outline: none;
+    border-color: #69B4D4;
+}
+
+.addSelect {
+    width: 40%;
+    box-shadow: 1px 1px;
+    color: #6F7375;
+    font-weight: 600;;
+    background: none;
+    margin: 0 auto;
+}
+
+/* Video Container CSS */
+#videoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vidImage {
+    height: 9vh;
+}
+
+#vidEventName {
+    margin-left: 6%;
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+.vidLink {
+    color: #4D97E4;
+}
+
+.vidLink:visited {
+    text-decoration: none;
+    color: #4D97E4;
+}
+
+.vidLink:link {
+    text-decoration: none;
+}
+
+.formRadioContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#formSubmit {
+    width: 48%;
+    margin: 0 auto;
+    background-color: #69B4D4;
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+#formReset {
+    width: 48%;
+    background-color: #3693bb;
+    color: white;
+    display: block;
+    margin: 4% auto;
+}
+.helpContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    /* SET A MOBILE FONT SIZE */
+}
+#helpHeader {
+    text-decoration: underline;
+    text-align: center;
+}
+.helpQuestion {
+    text-align: center;
+}
+
+/* Potential CSS Things To Do:
+    Scale nav font so it looks a lot larger on desktop view, currently the text and icons both look rather small.
+
+    Increase Viewport Height for Image Banner container - 25vh looks great. I wonder if I can do that responsively, we'll see.
+
+    Another thing apparent to me is that there isn't much space between the event banner's bottom and the search bar. I wonder if I can have an increased
+    margin bottom when the site is used by larger devices.
+
+    Are No Results Found, Match Finder, etc. not centered?!?
+
+    ....Do I need something to explain the site's structure for those who are unfamiliar with GBVS and how it works?
+    This is a question for the webdev discord.
+        Maybe a little About button?
+            Adding an About button or a How To Use button somewhere on the main page of my site because I imagine that it'd be hard for people who don't have the context of my site's purpose to figure out how to utilize it. 
+
+    Search Results should be aligned below search bar, Search bar take up less horizontal space and should be larger.
+
+    Maybe image banner doesn't have to be so much horizontal sapce too?
+
+    Search Results & Click Results:
+
+    I'm thinking that maybe when a search result is clicked, the following should happen:
+    
+    That's good enough for now imo.
+
+
+    Scaling from mobile to desktop:
+    Use media queries
+*/
+
+/* Media query for desktops */
+@media (min-width: 992px){
+    /* Scaling nav text for desktop */
+    .navLink {
+        font-size: 2.0em;
+    }
+    #imgHeadContainer {
+        height: 28vh;
+    }
+    #matchFinderText {
+        font-size: 2.5em;
+    }
+    #showNoResults {
+        margin-right: 2%;
+        font-size: 1.9em;
+    }
+    /* Altering search bar */
+    #homeSearch {
+        width: 40%;
+        font-size: 1.7em;
+    }
+    /* Changing image height for desktop */
+    .vidImage {
+        height: 7vh;
+    }
+    /* Realigning event name for desktop */
+    #vidEventName {
+        margin-left: 25%;
+        font-size: 1.3em;
+    }
+    .vidItem {
+        font-size: 1.4em;
+    }
+    /* Adjusting click result content for desktop */
+    #videoContainer {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+    }
+    #videoContainer .vidItem {
+        flex: 1;
+    }
+    .showResults {
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 2%;
+    }
+    .resultData {
+        text-align: center;
+        margin: 0;
+        font-size: 1.7em;
+        padding: 1%;
+    }
+    /* Add Page CSS */
+    #addHeader {
+        font-size: 1.7em;
+    }
+    .addForm {
+        justify-content: center;
+        align-items: center;
+    }
+    .formInput {
+        width: 40%;
+        font-size: 1.5em;
+        height: initial;
+        margin-left: 0%;
+        margin-bottom: 2%;
+    }
+    #formSubmit {
+        width: 12%;
+        height: 5vh;
+        font-size: 1.7em;
+    }
+    #formReset {
+        width: 12%;
+        height: 5vh;
+        margin: 1% auto;
+        font-size: 1.7em;
+    }
+    .addLabels {
+        font-size: 1.5em;
+    }
+    .formRadioContainer {
+        font-size: 1.3em;
+    }
+    .formRadio {
+        width: 1.5em;
+        height: 3vh;
+    }
+    .addSelect {
+        height: 4vh;
+        font-size: 1.3em;
+    }
+    .helpContainer {
+        font-size: 1.3em;
+    }
+    #helpHeader {
+        font-size: 1.6em;
+    }
+    .helpQuestion {
+        font-size: 1.4em;
+    }
+    #helpSubtext {
+        width: 50%;
+    }
+}
+
+
+/* 
+    I think that I'm going to have to approach
+    scaling the icon in a manner that's rather difficult.
+    This is going to be done by using componentDidMount alongside state.
+    On component mount, I'm gonna have to get screen width then from there I have to
+    scale accordingly w/ a state variable
+
+    This is kinda the basic premise of how you'd accomplish that.
+
+    The code for this has been written! Mess with like actual screen resolutions sometime later.
+    Think I might have to write a ternary for it.
+
+    4% margin bottom?
+
+    Work on adjusting icon in general in terms of properly aligning it.
+    That's going to be the hardest part free. If I had an icon for SBA, perhaps the spacing would be easier.
+    Worst case scenario I can add a ? alongside the help to make the spacing look better
+    (especially because this is something I planned on doing!)
+
+    Skyfarer Battle Logs?
+    Looking at noresults lining.
+    
+    Change horizontal bar width and font size of the text in search.
+
+    When result is clicked on:
+        Search Result section becomes hidden until user types in Search Bar again.
+    Click Result content is displayed.
+
+    Click Results Formatting:
+    Character images, names, icon, VS, and Event Name should scale, they look wayyyy too small on desktop.
+    Event Name should be lined up with the tip edge of search bar, the content is too far out.
+*/
+
+/*
+    Hmm...
+
+    I believe that I would have to potentially use a state for that.
+    Perhaps I can name a state resultClicked and have it be set to false by default.
+
+    state should be changed
+    1. when the result is clicked
+    2. when the user types in the search bar
+    
+    Works!
+
+    How do I center the VS text? No idea....
+    Let's start off with moving over the event text.
+    
+    But before that, let's fix the size and spacing of the result text itself.
+
+    ---
+    Uncertain how to center the search results (not clicked results) look good on mobile. Need to look into closer.
+
+    Potential CSS for videoContainer - changing justify-content to center?
+
+
+    TO-DO LIST:
+
+    (All you need to do for desktop view)
+    DONE!!! Fix alignment for search results - clean this up in a bit.
+    DONE!! Fix add page CSS
+    DONE! Help component
+
+    So, let's look into what needs fixing on the add page.
+    On a first glance, we need to fix the following:
+    DONE - Make the length and etc. of Event Name, P1 Name, Video Link and P2 Name the same as the main page Search!
+    DONE - Resize the Add Video and Reset Form buttons
+    DONE - Enlarge the text for the Upload Video
+
+    The only changes I really need to make are to make sure the website is responsive on different platforms and to
+    specifically adjust how the icons are resized depending on the platform width. That being said, everything else is fine!
+    You should work on resume stuff for now.
+*/
